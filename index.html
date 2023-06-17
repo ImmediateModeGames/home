@@ -1,250 +1,221 @@
 <!DOCTYPE html>
-   <head>
+<html>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Immediate Mode Games</title>
-    <link rel="shortcut icon" href="icons/gamelogo.png" type="image/x-icon"> 
+    <link rel="shortcut icon" href="icons/gamelogo.png" type="image/x-icon">
     <style type="text/css" media="screen">
-  * {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
+        * {
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
 
-  body, html {
-    padding: 5px 5px 5px 5px;
+        body, html {
+            padding: 5px 5px 5px 5px;
+            background-color: #000000;
+            font-family: Verdana, sans-serif;
+            font-size: 11pt;
+            text-align: center;
+        }
 
-    background-color: #000000;
+        div.main_page {
+            position: relative;
+            display: table;
+            width: 1482px;
+            height: 5000px;
+            margin-bottom: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            padding: 0px 0px 0px 0px;
+            border-width: 10px;
+            border-color: #212738;
+            border-style: solid;
+            background-color: #818589;
+            text-align: center;
+        }
 
-    font-family: Verdana, sans-serif;
-    font-size: 11pt;
-    text-align: center;
-  }
+        div.page_header {
+            height: 250px;
+            width: 100%;
+            background-color: #000000;
+        }
 
-  div.main_page {
-    position: relative;
-    display: table;
+        div.video_player {
+            margin-top: 10px;
+        }
 
-    width: 1482px;
-    height: 5000px;
-    
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    padding: 0px 0px 0px 0px;
+        div.page_header span {
+            margin: 280px 0px 0px 20px;
+            font-size: 180%;
+            font-weight: bold;
+        }
 
-    border-width: 10px;
-    border-color: #212738;
-    border-style: solid;
+        div.page_header img {
+            margin: 40px 0px 0px 40px;
+            border: 0px 0px 0px;
+        }
 
-    background-color: #818589;
-
-    text-align: center;
-  }
-
-  div.page_header {
-    height: 250px;
-    width: 100%;
-
-    background-color: #000000;
-  }
- div.video_player {  
-    margin-top: 10px;   
-  }
-
-  div.page_header span {
-    margin: 280px 0px 0px 20px;
-    
-    font-size: 180%;
-    font-weight: bold;
-  }
-
-  div.page_header img {
-    margin: 40px 0px 0px 40px;
-    
-    border: 0px 0px 0px;
-  }
-  .twitter-follow-button {
+        .twitter-follow-button {
             margin-left: 475px;
             margin-top: 1px;
-       
         }
-                       
-    .twitter-timeline {
+
+        .twitter-timeline {
             margin-left: 475px;
             margin-top: 10px;
             width: 500px;
             height: 900px;
             margin-bottom: auto;
-  } 
-  div.table_of_contents {
-    clear: left;
+        }
 
-    min-width: 200px;
+        div.table_of_contents {
+            clear: left;
+            min-width: 200px;
+            margin: 3px 3px 3px 3px;
+            background-color: #FFFFFF;
+            text-align: left;
+        }
 
-    margin: 3px 3px 3px 3px;
+        div.table_of_contents_item {
+            clear: left;
+            width: 100%;
+            margin: 4px 0px 0px 0px;
+            background-color: #FFFFFF;
+            color: #FFFFFF;
+            text-align: left;
+        }
 
-    background-color: #FFFFFF;
+            div.table_of_contents_item a {
+                margin: 6px 0px 0px 6px;
+            }
 
-    text-align: left;
-  }
+        div.content_section {
+            margin: 320px 3px 3px 3px;
+            background-color: #36454F;
+            text-align: left;
+        }
 
-  div.table_of_contents_item {
-    clear: left;
+        div.content_section_text {
+            padding: 4px 8px 4px 8px;
+            color: #000000;
+            font-size: 100%;
+        }
 
-    width: 100%;
+            div.content_section_text pre {
+                margin: 8px 0px 8px 0px;
+                padding: 8px 8px 8px 8px;
+                border-width: 1px;
+                border-style: solid;
+                border-color: #9F9386;
+                background-color: #000000;
+                font-style: italic;
+            }
 
-    margin: 4px 0px 0px 0px;
+            div.content_section_text p {
+                margin-bottom: 6px;
+            }
 
-    background-color: #FFFFFF;
+            div.content_section_text ul, div.content_section_text li {
+                padding: 4px 8px 4px 16px;
+            }
 
-    color: #FFFFFF;
-    text-align: left;
-  }
+        div.section_header {
+            padding: 3px 6px 3px 6px;
+            background-color: #FFFFFF;
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 112%;
+            text-align: center;
+        }
 
-  div.table_of_contents_item a {
-    margin: 6px 0px 0px 6px;
-  }
+        div.section_header_red {
+            background-color: #FF0000;
+            width: 100px;
+            height: 50px;
+            margin: 50px 0px 10px 10px;
+        }
 
-  div.content_section {
-    margin: 320px 3px 3px 3px;
-   
-    background-color: #36454F;
+        div.section_header_grey {
+            background-color: #9F9386;
+        }
 
-    text-align: left;
-  }
+        .floating_element {
+            position: relative;
+            float: left;
+        }
 
-  div.content_section_text {
-    padding: 4px 8px 4px 8px;
+        div.table_of_contents_item a,
+        div.content_section_text a {
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    color: #000000;
-    font-size: 100%;
-  }
+            div.table_of_contents_item a:link,
+            div.table_of_contents_item a:visited,
+            div.table_of_contents_item a:active {
+                color: #000000;
+            }
 
-  div.content_section_text pre {
-    margin: 8px 0px 8px 0px;
-    padding: 8px 8px 8px 8px;
+            div.table_of_contents_item a:hover {
+                background-color: #000000;
+                color: #FFFFFF;
+            }
 
-    border-width: 1px;
-    border-style: solid;
-    border-color: #9F9386;
+            div.content_section_text a:link,
+            div.content_section_text a:visited,
+            div.content_section_text a:active {
+                background-color: #818589;
+                color: #000000;
+            }
 
-    background-color: #000000;
+            div.content_section_text a:hover {
+                background-color: #000000;
+                color: #DCDFE6;
+            }
 
-    font-style: italic;
-  }
-
-  div.content_section_text p {
-    margin-bottom: 6px;
-  }
-
-  div.content_section_text ul, div.content_section_text li {
-    padding: 4px 8px 4px 16px;
-  }
-
-  div.section_header {
-    padding: 3px 6px 3px 6px;
-
-    background-color: #FFFFFF;
-  
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-  }
-
-  div.section_header_red {
-    background-color: #CD214F;
-    width: 100px;
-    height: 50px;
-    margin: 50px 0px 10px 10px;
-  }
-
-  div.section_header_grey {
-    background-color: #9F9386;
-  }
-
-  .floating_element {
-    position: relative;
-    float: left;
-  }
-
-  div.table_of_contents_item a,
-  div.content_section_text a {
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  div.table_of_contents_item a:link,
-  div.table_of_contents_item a:visited,
-  div.table_of_contents_item a:active {
-    color: #000000;
-  }
-
-  div.table_of_contents_item a:hover {
-    background-color: #000000;
-
-    color: #FFFFFF;
-  }
-
-  div.content_section_text a:link,
-  div.content_section_text a:visited,
-   div.content_section_text a:active {
-    background-color: #818589;
-
-    color: #000000;
-  }
-
-  div.content_section_text a:hover {
-    background-color: #000000;
-
-    color: #DCDFE6;
-  }
-
-  div.validator {
-  }
+        div.validator {
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <div class="main_page">
-      <div class="page_header floating_element">
-        <div class="video_player">
-        <video autoplay width="320" height="180" controls>
-       <source src="videos/gamevideo.webm" type="video/webm">
-         Your browser does not support the video tag.
-        </video>       
+        <div class="page_header floating_element">
+            <div class="video_player">
+                <video autoplay width="320" height="180" controls>
+                    <source src="videos/gamevideo.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <a href="https://twitter.com/ImmediateModeg?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ImmediateModeg</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <img src="icons/gamelogo.png" alt="Logo" class="floating_element" />
+            <span class="floating_element">
+                <p style="color: white;">Immediate Mode Games</p>
+            </span>
         </div>
-        <a href="https://twitter.com/ImmediateModeg?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @ImmediateModeg</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <img src="icons/gamelogo.png" alt="Logo" class="floating_element"/>
-        <span class="floating_element">
-          <p style="color: white;">Immediate Mode Games
-        </span>
-        </div>
-      <div class="content_section floating_element">
-       </span>
-        
-
-        <div class="section_header section_header_red">
-          <div id="about"></div>
-          Hello!
-        </div>
-        <div class="content_section_text">
-        </span>
+        <div class="content_section floating_element">
+            <div class="section_header section_header_red">
+                <div id="about"></div>
+                Hello!
+            </div>
+            <div class="content_section_text">
+            </div>
         </div>
         <div class="section_header">
-          <div id="changes"></div>
-                Configuration Overview
+            <div id="changes"></div>
+            Configuration Overview
         </div>
         <div class="content_section_text">
-          <p>
-                Thanks for checking out the Immediate Mode Games site. Makers of Tablinous. A retro feeling 
+            <p>
+                Thanks for checking out the Immediate Mode Games site. Makers of Tablinous. A retro feeling
                 table tennis game with a few exciting new twists.
-                Check out a limited web demo here <a href="/home/demo">Demo</a> 
-          </p>
-          <p>
+                Check out a limited web demo here <a href="/home/demo">Demo</a>
+            </p>
+            <p>
                 The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
-          </p>
-          <pre>
+            </p>
+            <pre>
 /etc/apache2/
 |-- apache2.conf
 |       `--  ports.conf
@@ -256,59 +227,59 @@
 |-- sites-enabled
 |       `-- *.conf
           </pre>
-          <ul>
-                        <li>
-                           <tt>apache2.conf</tt> is the main configuration
-                           file. It puts the pieces together by including all remaining configuration
-                           files when starting up the web server.
-                        </li>
+            <ul>
+                <li>
+                    <tt>apache2.conf</tt> is the main configuration
+                    file. It puts the pieces together by including all remaining configuration
+                    files when starting up the web server.
+                </li>
 
-                        <li>
-                           <tt>ports.conf</tt> is always included from the
-                           main configuration file. It is used to determine the listening ports for
-                           incoming connections, and this file can be customized anytime.
-                        </li>
+                <li>
+                    <tt>ports.conf</tt> is always included from the
+                    main configuration file. It is used to determine the listening ports for
+                    incoming connections, and this file can be customized anytime.
+                </li>
 
-                        <li>
-                           Configuration files in the <tt>mods-enabled/</tt>,
-                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
-                           particular configuration snippets which manage modules, global configuration
-                           fragments, or virtual host configurations, respectively.
-                        </li>
+                <li>
+                    Configuration files in the <tt>mods-enabled/</tt>,
+                    <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+                    particular configuration snippets which manage modules, global configuration
+                    fragments, or virtual host configurations, respectively.
+                </li>
 
-                        <li>
-                           They are activated by symlinking available
-                           configuration files from their respective
-                           *-available/ counterparts. These should be managed
-                           by using our helpers
-                           <tt>
-                                a2enmod,
-                                a2dismod,
-                           </tt>
-                           <tt>
-                                a2ensite,
-                                a2dissite,
-                            </tt>
-                                and
-                           <tt>
-                                a2enconf,
-                                a2disconf
-                           </tt>. See their respective man pages for detailed information.
-                        </li>
+                <li>
+                    They are activated by symlinking available
+                    configuration files from their respective
+                    *-available/ counterparts. These should be managed
+                    by using our helpers
+                    <tt>
+                        a2enmod,
+                        a2dismod,
+                    </tt>
+                    <tt>
+                        a2ensite,
+                        a2dissite,
+                    </tt>
+                    and
+                    <tt>
+                        a2enconf,
+                        a2disconf
+                    </tt>. See their respective man pages for detailed information.
+                </li>
 
-                        <li>
-                           The binary is called apache2. Due to the use of
-                           environment variables, in the default configuration, apache2 needs to be
-                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
-                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
-                           default configuration.
-                        </li>
-          </ul>
+                <li>
+                    The binary is called apache2. Due to the use of
+                    environment variables, in the default configuration, apache2 needs to be
+                    started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+                    <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+                    default configuration.
+                </li>
+            </ul>
         </div>
 
         <div class="section_header">
             <div id="docroot"></div>
-                Document Roots
+            Document Roots
         </div>
 
         <div class="content_section_text">
@@ -329,30 +300,26 @@
         </div>
 
         <div class="section_header">
-          <div id="bugs"></div>
-                Reporting Problems
+            <div id="bugs"></div>
+            Reporting Problems
         </div>
         <div class="content_section_text">
-          <p>
+            <p>
                 Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
-                Apache2 package with Ubuntu. However, check <a
-                href="https://bugs.launchpad.net/ubuntu/+source/apache2"
-                rel="nofollow">existing bug reports</a> before reporting a new bug.
-          </p>
-          <p>
+                Apache2 package with Ubuntu. However, check <a href="https://bugs.launchpad.net/ubuntu/+source/apache2"
+                                                               rel="nofollow">existing bug reports</a> before reporting a new bug.
+            </p>
+            <p>
                 Please report bugs specific to modules (such as PHP and others)
                 to respective packages, not to the web server itself.
-          </p>
+            </p>
         </div>
-       <a class="twitter-timeline" href="https://twitter.com/ImmediateModeg?ref_src=twsrc%5Etfw">Tweets by ImmediateModeg</a>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-      </div>
+        <a class="twitter-timeline" href="https://twitter.com/ImmediateModeg?ref_src=twsrc%5Etfw">Tweets by ImmediateModeg</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
     </div>
     <div class="validator">
     </div>
-  </body>
+</body>
 </html>
 
